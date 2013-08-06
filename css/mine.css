@@ -1,0 +1,147 @@
+/* CSS declarations go here */
+
+body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:none;
+}
+
+#entrance {
+    background-color: white;
+    padding: 10px;
+    width:50%;
+    text-align:center;
+    font-family: 'Chelsea Market', cursive;
+    margin-bottom: 100px;
+}
+
+.tilt {
+    -webkit-transform: rotate(11deg);
+    -moz-transform: rotate(11deg);
+    -ms-transform: rotate(11deg);
+    -o-transform: rotate(11deg);
+    transform: rotate(11deg);
+    -webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    -ms-transform-origin: 0px 0px;
+    -o-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+}
+
+/* Silly things I may use once or twice more */
+
+.shadow {
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+}
+
+.left {
+    padding-left:0px;
+}
+
+.fullHeight {
+    height: 100%;
+}
+
+.center {
+    width:100%;
+    height:100%;
+    top: 25%;
+    left: 25%;
+    position: absolute;
+}
+
+/* Sidebar css */
+#sidebar {
+    position: fixed;
+    padding-left: 0px;
+}
+
+.side_I {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:30px;
+    border-top-right-radius:100px;
+    border-bottom-right-radius:100px;
+}
+
+.side_I a {
+    color: black;
+}
+
+.side_I.selected {
+    background-color:black;
+    color:white;
+}
+
+/* About css */
+#about_background {
+    width:100%;
+    height:100px;
+    background-image: url(/assets/laptop_me.jpg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    float: right;
+    position: relative;
+}
+
+#about_text {
+}
+
+/* Overriding foundation css */
+.button.small {
+    background-color:white;
+    color:black;
+}
+
+.padMinus {
+    padding:0px;
+}
+
+.side_I:hover,
+.button:hover {
+    background-color:#afe7ff;
+}
+
+/* Resume css */
+.resume h2 {
+    font-size: 1.5em;
+    font-weight: none;
+}
+
+.resume h3 {
+    font-size: 1.2em;
+    font-weight:415;
+    line-height:12px;
+}
+
+.resume h4 {
+    font-size:1.0em;
+    font-weight:300;
+    font-style:italic;
+    line-height:7px;
+}
+
+.resume h5 {
+    font-size:0.8em;
+    font-weight:300;
+    line-height:12px;
+}
+
+.resume p {
+    font-size:1.0em;
+    font-weight:300;
+    line-height:20px;
+}
+
+.resume .columns {
+    padding:0px;
+    background: #f2f2f2;
+}
+
+.resume .panel {
+    margin:0px;
+    border:none;
+}
+

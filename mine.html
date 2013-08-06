@@ -1,0 +1,74 @@
+<head>
+  <title>Ali Nahm | when pigs fly</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Chelsea+Market' rel='stylesheet' type='text/css'>
+  <script type='text/javascript'>
+    // Used to randomly generate pretty background colors
+    $(document).ready(function() {
+        var randColor = 'rgb(' + (Math.floor(Math.random() * 256))
+            + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+        $('html').css('background-color', randColor);
+    });
+  </script>
+</head>
+
+<body>
+    {{> hello}}
+</body>
+
+<template name="hello">
+<div class="center">
+    <div class="container">
+        <div id="entrance" class="shadow tilt">
+            {{greeting}}
+        </div>
+    </div>
+    <a href="#about" type="button" class="small button">about</a>
+    <a href="#work" type="button" class="small button">work</a>
+    <a href="#thoughts" type="button" class="small button">thoughts</a>
+    <a href="#design" type="button" class="small button">design</a>
+    <a href="#resume" type="button" class="small button">resume</a>
+</div>
+</template>
+
+<template name="basic">
+<div class="large-12 columns left fullHeight padMinus">
+  <div class="large-2 columns left fullHeight">
+    <div class="panel fullHeight" id="sidebar">
+        <!-- TODO resume + pdf <br>
+        TODO selected <br>
+        TODO links <br> -->
+        {{#constant}}
+        <div class="side_I">
+            <a href="/">Home</a>
+        </div>
+        <div class="side_I {{aboutClass}}" id="about">
+            About
+        </div>
+        <div class="side_I {{workClass}}" id="work">
+            Work
+        </div>
+        <div class="side_I {{thoughtsClass}}" id="thoughts">
+            Thoughts
+        </div>
+        <div class="side_I {{designClass}}" id="design">
+            Design
+        </div>
+        <div class="side_I {{resumeClass}}" id="resume">
+            Resume
+        </div>
+        {{/constant}}
+
+    </div>
+  </div>
+  <div class="large-10 columns fullHeight padMinus">
+      <!-- <div class="panel">
+        <h3 style="padding-left:10px;"> {{pageTitle}} </h3>
+    </div> -->
+      <div id="beef" class="fullHeight">
+      </div>
+  </div>
+</div>
+</template>
+
+
